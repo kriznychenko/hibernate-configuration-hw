@@ -16,5 +16,8 @@ public class Main {
 
         Movie addedMovie = movieService.add(movieToAdd);
         System.out.println("Added movie: " + addedMovie);
+
+        Movie movieToGet = movieService.get(addedMovie.getId());
+        System.out.println("Get movie: " + movieToGet);
     }
 }
